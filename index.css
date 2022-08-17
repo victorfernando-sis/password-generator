@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    background-color: #ECFDF5;
+    padding: 50px;
+    font-family: "Inter", sans-serif;
+    border:1px solid #10B981;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-width: 530px
+}
+
+header {
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+header > h1 {
+    margin: 0;
+}
+header > h1 > span {
+    color: #10B981;
+}
+
+header > p {
+    color: #6B7280;
+    margin: 10px 0px 40px 0px;
+}
+
+.password-specs{
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+    border-bottom: 1px solid #D5D4D8;
+    color: #6B7280;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.password-specs > div{
+    margin: 7px 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+#password-lenght-input{
+    width: 42px;
+    background-color: #ffff;
+    border: 1px solid #10B981;
+    padding: 5px;
+    color: #10B981;
+    font-weight: bold;
+    
+}
+
+.generate-password-btn{
+    margin: 30px 0;
+    background: #10B981;
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px; 
+    width: 190px;
+    height: 42px; 
+    cursor: pointer;
+    color: #ffff;
+ 
+}
+
+.new-passwords-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.new-passwords-container > div{
+    background-color: #273549;
+    color: #5DEF92;
+    width: 210px;
+    height: 42px;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
